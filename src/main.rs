@@ -7,6 +7,9 @@ fn main() -> Result<(), Error> {
     let (x,y) = (1,2);
     println!("{}", format_args!("{x} + {y} = 3"));
     
+    // iss53 issue is to add 'Hello, World' to the program basic_auth
+    println!("{}", format!("Hello, {}", "World"));
+    
     let client = Client::new();
 
     let user_name = "tesuser".to_string();
